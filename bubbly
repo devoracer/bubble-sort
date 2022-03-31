@@ -15,3 +15,17 @@ def bubble_sort(list_of_numbers):
 unsorted_list = [20, 31, 5, 1, 591, 1351, 693]
 print(unsorted_list)
 print(bubble_sort(unsorted_list))
+
+
+#additional code
+def sort(nums):
+    for i in range(len(nums)-1,0,-1):
+        for j in range(i):
+            if nums[j] > nums[j + 1]:
+                temp = nums[j]
+                nums[j] = nums[j+1]
+                nums[j+1] = temp
+
+nums = [5, 3, 8, 6, 7, 2]
+sort(nums)
+print(nums)
